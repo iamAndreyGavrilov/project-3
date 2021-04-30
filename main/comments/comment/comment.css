@@ -1,0 +1,89 @@
+.comment {
+    max-width: 382px;
+}
+
+.comment__image {
+    max-width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    margin-bottom: 42px;
+}
+
+.comment__quote {
+    margin: 0;
+    max-width: 382px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.comment__author {
+    max-width: 382px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .comment__image {
+        margin-bottom: 42px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comment__image {
+        order: 1;
+        margin-bottom: 15px;
+    }
+    .comment__author {
+        order: 2;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .comment__quote {
+        order: 3;
+        margin-bottom: 48px;
+    }
+    .comment__quote_mb {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .comment__quote {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 6px;
+    }
+    .comment__author {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .comment__quote {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 6px;
+    }
+    .comment__author {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {}

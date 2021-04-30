@@ -1,0 +1,211 @@
+.video {
+    max-width: 1184px;
+    margin: 0;
+    margin-top: 102px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__content-title {
+    width: 800px;
+    margin: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.video__content-subtitle {
+    width: 640px;
+    margin: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 48px;
+}
+
+.video__container {
+    width: 100%;
+    height: 323px;
+    margin: 0;
+    margin-top: 72px;
+    display: flex;
+}
+
+.video__item {
+    width: 583px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.video__item:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.video__item:hover:before {
+    transition: .3s linear;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.video__item_kam {
+    background-image: url(../../images/kamchatka.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video__item_obs {
+    background-image: url(../../images/observatory.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video__item:nth-child(1) {
+    margin-right: 18px;
+}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .video {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    .video__content-title {
+        font-size: 72px;
+        line-height: 78px;
+        text-align: center;
+        width: 104%;
+    }
+    .video__content-subtitle {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .video__container {
+        width: 100%;
+        margin: 0;
+        margin-top: 72px;
+    }
+    .video__item {
+        height: 288px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        max-width: 720px;
+    }
+    .video__content-title {
+        width: 90%;
+        font-size: 42px;
+        line-height: 46px;
+    }
+    .video__content-subtitle {
+        width: 100%;
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .video__container {
+        margin-top: 56px;
+        max-height: 200px;
+        max-width: 720px;
+    }
+    .video__item {
+        width: 352px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .video {
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .video__content-title {
+        font-size: 32px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .video__content-subtitle {
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 16px;
+    }
+    .video__container {
+        width: 100%;
+        flex-direction: column;
+        max-height: none;
+        height: 100%;
+        margin-top: 24px
+    }
+    .video__item {
+        margin-right: 0;
+        width: 100%;
+    }
+    .video__item:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .video {
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .video__content-title {
+        font-size: 32px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .video__content-subtitle {
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 16px;
+    }
+    .video__container {
+        width: 100%;
+        flex-direction: column;
+        max-height: none;
+        height: 100%;
+        margin-top: 24px
+    }
+    .video__item {
+        margin-right: 0;
+        width: 100%;
+    }
+    .video__item:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .video__item {
+        max-width: 288px;
+        height: 192px;
+    }
+}

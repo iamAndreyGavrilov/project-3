@@ -1,0 +1,124 @@
+.comments {
+    max-width: 1184px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 102px;
+}
+
+.comments__content-title {
+    max-width: 800px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments__content-subtitle {
+    max-width: 640px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+}
+
+.comments__container {
+    max-width: 1184px;
+    margin: 0;
+    display: grid;
+    margin-top: 72px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 19px;
+}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .comments {
+        max-width: 928px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    .comments__content-title {
+        font-size: 72px;
+        line-height: 65px;
+        text-align: center;
+    }
+    .comments__content-subtitle {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comments__content-title {
+        max-width: 100%;
+        font-size: 42px;
+        line-height: 46px;
+    }
+    .comments__content-subtitle {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .comments__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .comments {
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .comments__content-title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .comments__content-subtitle {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .comments__container {
+        margin-top: 42px
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .comments {
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .comments__content-title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .comments__content-subtitle {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .comments__container {
+        margin-top: 42px
+    }
+}
+
+@media screen and (max-width: 320px) {}
